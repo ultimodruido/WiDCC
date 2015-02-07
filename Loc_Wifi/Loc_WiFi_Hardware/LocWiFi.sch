@@ -37,9 +37,9 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "WiDCC - Wifi Locomotive decoder"
-Date "sabato 24 gennaio 2015"
-Rev "_G"
-Comp "nicolinux"
+Date "sabato 07 febbraio 2015"
+Rev "_H"
+Comp "www.nicolinux.eu"
 Comment1 "Licence: http://creativecommons.org/licenses/by-nc-sa/4.0/"
 Comment2 ""
 Comment3 ""
@@ -94,7 +94,7 @@ L UA78M33C U1
 U 1 1 53D7DFF3
 P 4600 1800
 F 0 "U1" H 4600 2050 60  0000 C CNN
-F 1 "LM1117I-3.3" H 4600 1950 60  0000 C CNN
+F 1 "AMS1117-3.3" H 4600 1950 60  0000 C CNN
 F 2 "~" H 4600 1800 60  0000 C CNN
 F 3 "~" H 4600 1800 60  0000 C CNN
 	1    4600 1800
@@ -139,7 +139,7 @@ Text Label 4400 4300 0    60   ~ 0
 PIC_MOTOR_PWM
 Text Label 4400 4150 0    60   ~ 0
 PIC_MOTOR_DIR
-Text Label 8500 4600 2    60   ~ 0
+Text Label 8400 4650 2    60   ~ 0
 PIC_LIGHT_REAR
 Text Notes 8000 1100 0    60   ~ 0
 Motor full bridge driver
@@ -472,12 +472,12 @@ Wire Wire Line
 $Comp
 L +12V #PWR23
 U 1 1 54720B0B
-P 10200 4450
-F 0 "#PWR23" H 10200 4400 20  0001 C CNN
-F 1 "+12V" H 10200 4550 30  0000 C CNN
-F 2 "" H 10200 4450 60  0000 C CNN
-F 3 "" H 10200 4450 60  0000 C CNN
-	1    10200 4450
+P 10100 4500
+F 0 "#PWR23" H 10100 4450 20  0001 C CNN
+F 1 "+12V" H 10100 4600 30  0000 C CNN
+F 2 "" H 10100 4500 60  0000 C CNN
+F 3 "" H 10100 4500 60  0000 C CNN
+	1    10100 4500
 	-1   0    0    -1  
 $EndComp
 Wire Notes Line
@@ -486,21 +486,21 @@ Wire Notes Line
 	10900 3550 10900 1200
 Wire Notes Line
 	7450 3550 7450 1200
-Text Label 10150 4300 0    60   ~ 0
+Text Label 10050 4350 0    60   ~ 0
 LIGHT_FRONT
 Wire Wire Line
-	8600 4300 8500 4300
+	8500 4350 8400 4350
 Wire Wire Line
-	8600 4600 8500 4600
+	8500 4650 8400 4650
 Wire Notes Line
 	10900 3900 7450 3900
-Text Label 8500 4300 2    60   ~ 0
+Text Label 8400 4350 2    60   ~ 0
 PIC_LIGHT_FRONT
 Text Label 4400 4450 0    60   ~ 0
 PIC_MOTOR_nSLEEP
 Text Label 4450 3850 0    60   ~ 0
 PIC_LIGHT_FRONT
-Text Label 10150 4600 0    60   ~ 0
+Text Label 10050 4650 0    60   ~ 0
 LIGHT_REAR
 Text Notes 8000 3800 0    60   ~ 0
 Additional functions
@@ -561,12 +561,6 @@ Wire Notes Line
 	1200 7300 1200 5550
 Wire Notes Line
 	1200 5550 1650 5550
-Wire Notes Line
-	10900 5200 7450 5200
-Wire Notes Line
-	10900 3900 10900 6350
-Wire Notes Line
-	7450 3900 7450 6350
 Wire Wire Line
 	3000 1800 3350 1800
 Wire Wire Line
@@ -587,8 +581,6 @@ Wire Wire Line
 	2350 1900 2250 1900
 Wire Wire Line
 	2250 2000 2350 2000
-Wire Notes Line
-	7450 6350 10900 6350
 Text Label 2750 6600 0    60   ~ 0
 F3
 Text Label 2750 6700 0    60   ~ 0
@@ -782,33 +774,33 @@ $EndComp
 $Comp
 L DMG9926UDM U4
 U 1 1 54CFF599
-P 9350 4450
-F 0 "U4" H 9350 4100 60  0000 C CNN
-F 1 "DMG9926UDM" H 9350 4800 60  0000 C CNN
-F 2 "" H 9350 4150 60  0000 C CNN
-F 3 "" H 9350 4150 60  0000 C CNN
-	1    9350 4450
+P 9250 4500
+F 0 "U4" H 9250 4150 60  0000 C CNN
+F 1 "DMG9926UDM" H 9250 4850 60  0000 C CNN
+F 2 "" H 9250 4200 60  0000 C CNN
+F 3 "" H 9250 4200 60  0000 C CNN
+	1    9250 4500
 	1    0    0    -1  
 $EndComp
 $Comp
 L +12V #PWR19
 U 1 1 54CFF6DE
-P 8450 4450
-F 0 "#PWR19" H 8450 4400 20  0001 C CNN
-F 1 "+12V" H 8450 4550 30  0000 C CNN
-F 2 "" H 8450 4450 60  0000 C CNN
-F 3 "" H 8450 4450 60  0000 C CNN
-	1    8450 4450
+P 8350 4500
+F 0 "#PWR19" H 8350 4450 20  0001 C CNN
+F 1 "+12V" H 8350 4600 30  0000 C CNN
+F 2 "" H 8350 4500 60  0000 C CNN
+F 3 "" H 8350 4500 60  0000 C CNN
+	1    8350 4500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 4450 10050 4450
+	10100 4500 9950 4500
 Wire Wire Line
-	10150 4300 10050 4300
+	10050 4350 9950 4350
 Wire Wire Line
-	10150 4600 10050 4600
+	10050 4650 9950 4650
 Wire Wire Line
-	8600 4450 8450 4450
+	8500 4500 8350 4500
 $Comp
 L BAS_4002A P2
 U 1 1 54D14093
@@ -834,4 +826,14 @@ Wire Wire Line
 Wire Wire Line
 	7850 3300 8000 3300
 Connection ~ 7850 3050
+Wire Notes Line
+	7450 5050 10900 5050
+Wire Notes Line
+	10900 5050 10900 3900
+Wire Notes Line
+	7450 3900 7450 5050
+Wire Notes Line
+	3350 6150 1200 6150
+Wire Notes Line
+	3350 6550 1200 6550
 $EndSCHEMATC
