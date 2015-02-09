@@ -1,4 +1,5 @@
 WiDCC - model railway WiFi decoder
+==================================
 
 WiDCC is a project aiming to create a railway locomotive wifi decoder compatible with the 802.11g standard (the wifi network everybody has at home).
 
